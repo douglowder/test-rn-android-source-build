@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native/ReactAndroid/hermes-engine/build.gradle b/node_modules/react-native/ReactAndroid/hermes-engine/build.gradle
+index 25ff8eb..e6c9578 100644
+--- a/node_modules/react-native/ReactAndroid/hermes-engine/build.gradle
++++ b/node_modules/react-native/ReactAndroid/hermes-engine/build.gradle
+@@ -47,7 +47,7 @@ def hermesDir = System.getenv("REACT_NATIVE_OVERRIDE_HERMES_DIR") ?: new File(re
+ def hermesBuildDir = new File("$buildDir/hermes")
+ 
+ def hermesVersion = "main"
+-def hermesVersionFile = new File(reactNativeRootDir, "../../node_modules/react-native-core/sdks/.hermesversion")
++def hermesVersionFile = new File(reactNativeRootDir, "../react-native-core/sdks/.hermesversion")
+ if (hermesVersionFile.exists()) {
+     hermesVersion = hermesVersionFile.text
+ }
